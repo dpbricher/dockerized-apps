@@ -1,0 +1,11 @@
+services:
+  d2:
+    build: .
+    environment:
+      HOST: 0.0.0.0
+      PORT: 12345
+    ports:
+      - 127.0.0.1:12345:12345
+    volumes:
+      - .:/wd
+    working_dir: /wd
